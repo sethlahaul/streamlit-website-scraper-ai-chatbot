@@ -24,7 +24,7 @@ class GeminiWebsiteChatbot:
         """Setup Gemini AI model"""
         try:
             genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel('gemini-1.5-flash')
+            self.model = genai.GenerativeModel('gemini-2.0-flash')
             self.api_key = api_key
             return True
         except Exception as e:
